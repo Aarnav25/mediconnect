@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediConnect - Telemedicine Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Glassmorphism */
+        .glass {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header with Glassmorphism and Rounded Corners -->
+    <header class="glass bg-blue-600 text-white p-6 flex justify-between items-center mx-8 mt-4 rounded-full">
+        <!-- Left Links (Doctors, Appointments) -->
+        <nav class="flex space-x-6">
+            <a href="doctors.html" class="hover:text-gray-300 transition text-lg">Doctors</a>
+            <a href="appointments.html" class="hover:text-gray-300 transition text-lg">Appointments</a>
+        </nav>
+
+        <!-- Centered MediConnect Logo -->
+        <h1 class="text-3xl font-bold text-white">MediConnect</h1>
+
+        <!-- Right Links (Home, About, Contact) -->
+        <nav class="flex space-x-6">
+            <a href="index.html" class="hover:text-gray-300 transition text-lg">Home</a>
+            <a href="about.html" class="hover:text-gray-300 transition text-lg">About</a>
+            <a href="contact.html" class="hover:text-gray-300 transition text-lg">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-500 text-white text-center py-20 mt-6 glass mx-8 rounded-2xl">
+        <h2 class="text-4xl font-bold mb-4 animate-bounce">Connecting You with Doctors Online</h2>
+        <p class="text-lg mb-6">Your health is our priority. Consult with doctors anytime, anywhere.</p>
+        <a href="appointments.html" class="bg-white text-blue-500 py-3 px-6 rounded-lg transition hover:bg-blue-400 hover:text-white">Book an Appointment</a>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="text-center py-16 mx-8 mt-6 glass rounded-2xl">
+        <h2 class="text-3xl font-bold mb-6">Why Choose MediConnect?</h2>
+        <div class="flex justify-center space-x-10">
+            <div class="w-1/4 bg-white p-6 shadow-lg rounded-lg transform hover:scale-105 transition">
+                <h3 class="text-xl font-semibold">Wide Network of Doctors</h3>
+                <p>Consult with healthcare specialists across various fields.</p>
+            </div>
+            <div class="w-1/4 bg-white p-6 shadow-lg rounded-lg transform hover:scale-105 transition">
+                <h3 class="text-xl font-semibold">Affordable Services</h3>
+                <p>Our pricing model makes telemedicine accessible for all.</p>
+            </div>
+            <div class="w-1/4 bg-white p-6 shadow-lg rounded-lg transform hover:scale-105 transition">
+                <h3 class="text-xl font-semibold">Easy Scheduling</h3>
+                <p>Book appointments quickly with our simple interface.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center py-4 mt-10 rounded-t-2xl glass mx-8">
+        <p>© 2024 MediConnect. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

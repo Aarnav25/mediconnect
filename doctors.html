@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors - MediConnect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .glass {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* Doctor card hover effect */
+        .doctor-card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Graph animation */
+        @keyframes grow {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        .bar {
+            background-color: #3b82f6;
+            height: 20px;
+            animation: grow 2s ease-in-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header with Glassmorphism and Rounded Corners -->
+    <header class="glass bg-blue-600 text-white p-6 flex justify-between items-center mx-8 mt-4 rounded-full">
+        <!-- Left Links (Doctors, Appointments) -->
+        <nav class="flex space-x-6">
+            <a href="doctors.html" class="hover:text-gray-300 transition text-lg">Doctors</a>
+            <a href="appointments.html" class="hover:text-gray-300 transition text-lg">Appointments</a>
+        </nav>
+
+        <!-- Centered MediConnect Logo -->
+        <h1 class="text-3xl font-bold text-white">MediConnect</h1>
+
+        <!-- Right Links (Home, About, Contact) -->
+        <nav class="flex space-x-6">
+            <a href="index.html" class="hover:text-gray-300 transition text-lg">Home</a>
+            <a href="about.html" class="hover:text-gray-300 transition text-lg">About</a>
+            <a href="contact.html" class="hover:text-gray-300 transition text-lg">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Doctors List -->
+    <section class="py-16 mx-8 mt-6 glass rounded-2xl">
+        <h2 class="text-4xl font-bold text-center mb-10">Meet Our Doctors</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Doctor Card 1 -->
+            <div class="doctor-card bg-white p-6 rounded-lg shadow-lg text-center transform transition hover:scale-105">
+                <img src="https://via.placeholder.com/150" alt="Doctor Image" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold">Dr. John Doe</h3>
+                <p class="text-gray-500">Cardiologist</p>
+                <div class="mt-4">
+                    <p>Ratings: 4.5/5</p>
+                    <div class="bar w-full bg-gray-200 mt-2"></div>
+                </div>
+            </div>
+            <!-- Doctor Card 2 -->
+            <div class="doctor-card bg-white p-6 rounded-lg shadow-lg text-center transform transition hover:scale-105">
+                <img src="https://via.placeholder.com/150" alt="Doctor Image" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold">Dr. Jane Smith</h3>
+                <p class="text-gray-500">Dermatologist</p>
+                <div class="mt-4">
+                    <p>Ratings: 4.8/5</p>
+                    <div class="bar w-full bg-gray-200 mt-2"></div>
+                </div>
+            </div>
+            <!-- Add more doctor cards similarly -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center py-4 mt-10 rounded-t-2xl glass mx-8">
+        <p>© 2024 MediConnect. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
